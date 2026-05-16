@@ -5,7 +5,7 @@ function PlantCard({ plant, onToggleStock }) {
     <li data-testid="plant-item" className="card">
       <img src={plant.image} alt={plant.name} />
       <h4>{plant.name}</h4>
-      <p>Price: ${plant.price}</p>
+      <p>Price: {plant.price}</p>
       <button onClick={() => onToggleStock(plant.id)}>
         {plant.inStock ? "In Stock" : "Out of Stock"}
       </button>

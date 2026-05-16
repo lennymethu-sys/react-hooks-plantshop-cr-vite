@@ -2,7 +2,7 @@ import React from "react";
 
 function PlantCard({ plant, onToggleStock }) {
   return (
-    <li className="card">
+    <li data-testid="plant-item" className="card">
       <img src={plant.image} alt={plant.name} />
       <h4>{plant.name}</h4>
       <p>Price: ${plant.price}</p>
